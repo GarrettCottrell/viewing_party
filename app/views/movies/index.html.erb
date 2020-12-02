@@ -1,0 +1,5 @@
+<% @movies.each_with_index do |movie, index| %>
+  <ul class="movie-<%= index %>">
+    <li class="title"><%= movie[:title] %></li>
+  </ul>
+<% end %>

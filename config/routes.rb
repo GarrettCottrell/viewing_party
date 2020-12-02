@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/registration', to: 'users#new', as: :registration
   resources :users, only: %i[create]
   get '/dashboard', to: 'dashboard#show'
+  get '/discover', to: 'movies#new'
+  get '/movies', to: 'movies#index'
 end

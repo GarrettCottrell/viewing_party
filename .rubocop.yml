@@ -15,6 +15,7 @@ AllCops:
     - 'vendor/**/*'
     - './*'
 
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 

@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get '/', to: 'welcome#index'
   post '/sessions', to: 'sessions#create'
   get '/movies/:id', to: 'movies#show' #as: :movie - will change it into movie path
+
+  #viewing_party
+  get '/viewing_party/new', to: 'viewing_parties#new'
 end

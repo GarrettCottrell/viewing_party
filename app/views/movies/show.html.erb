@@ -1,0 +1,16 @@
+<h1>Welcome <%= current_user.name %>!</h1>
+
+<h1><%= @movie_details[:original_title] %></h1>
+
+<h3>Vote Average: <%= @movie_details[:vote_average] %></h3>
+
+<h3>Genre(s):
+  <% @movie_details[:genres].each do |genre| %>
+    <%= genre[:name] %><% if(genre != @movie_details[:genres].last) %>,
+    <% end %>
+  <% end %>
+</h3>
+
+<h3>Summary: <%= @movie_details[:overview] %></h3>
+
+<h3>Runtime: <%= @movie_details[:runtime] / 60 %> hr <%= @movie_details[:runtime] % 60 %> min</h3>

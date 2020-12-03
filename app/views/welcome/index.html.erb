@@ -1,0 +1,17 @@
+<h1>Welcome To Viewing Party</h1>
+<h4>Viewing Party is a movie watch-party coordination service.</h4>
+
+<body>
+  <%= form_tag("/sessions", method: :post) do  %>
+
+    <%= label_tag(:email) %>
+    <%= text_field_tag(:email) %>
+
+    <%= label_tag(:password) %>
+    <%= password_field_tag(:password) %>
+
+    <%= submit_tag("Sign in") %>
+  <% end %>
+</body>
+
+<%= link_to 'New to Viewing Party? Register Here', '/registration', method: :get %>

@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   get '/discover', to: 'movies#new'
   get '/movies', to: 'movies#index'
+  get '/', to: 'welcome#index'
+  post '/sessions', to: 'sessions#create'
 end

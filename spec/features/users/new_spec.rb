@@ -12,7 +12,15 @@ describe 'As a visitor' do
 
       click_button 'Register'
       expect(current_path).to eq('/dashboard')
-      expect(page).to have_content('test@email.com')
+      expect(page).to have_content('Testname')
+    end
+
+    it 'I see a link to log-in and when I click that link I am redirected to
+    the welcome page' do
+      visit '/registration'
+
+      click_link 'Already Registered? Log in Here'
+      expect(current_path).to eq('/')
     end
   end
 end

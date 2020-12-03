@@ -8,14 +8,12 @@ describe 'As an authenticated user' do
     end
     it 'I see a button to create a viewing party' do
       visit "/movies/761053"
-
       click_button('Create Viewing Party for Movie')
       expect(current_path).to eq('/events/new')
     end
 
     it 'I see should movie information including title, average vote, runtime, genre and summary' do
       visit "/movies/278"
-
       expect(page).to have_content("The Shawshank Redemption")
       expect(page).to have_content("Vote Average: 8.7")
       expect(page).to have_content("Runtime: 2 hr 22 min")
@@ -34,9 +32,11 @@ describe 'As an authenticated user' do
 
     it "I see the total count of reviews and each review's author and information" do
       visit "/movies/278"
+      save_and_open_page
       expect(page).to have_content('6 Reviews')
       within '.review-result-0' do
         expect(page).to have_content("very good movie")
+        expect(page).to have_content("elshaarawy")
       end
     end
   end

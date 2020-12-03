@@ -23,5 +23,6 @@
 <% @reviews[:results].each_with_index do |review, index| %>
     <ul class="review-result-<%= index %>">
       <li class="review-content"><%= review[:content] %>
+      <li class="review-author"><%= review[:author] %>
     </ul>
   <% end %>

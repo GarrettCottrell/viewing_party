@@ -17,5 +17,12 @@ describe 'As a visitor' do
       expect(current_path).to eq('/dashboard')
       expect(page).to have_content('Welcome Garrett')
     end
+
+    it 'I see a link to register and when I click on that link, I am taken to the registration page' do
+      visit '/'
+
+      click_link 'New to Viewing Party? Register Here'
+      expect(current_path).to eq('/registration')
+    end
   end
 end

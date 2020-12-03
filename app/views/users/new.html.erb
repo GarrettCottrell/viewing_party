@@ -1,4 +1,4 @@
-<h1> Registration Form</h1>
+<h1> Welcome To Viewing Party </h1>
 <body>
   <%= form_tag("/users", method: :post) do  %>
     <%= label_tag(:name) %>
@@ -16,3 +16,5 @@
     <%= submit_tag("Register") %>
   <% end %>
 </body>
+
+<%= link_to 'Already Registered? Log in Here', '/', method: :get %>

@@ -1,8 +1,4 @@
 class MoviesController < ApplicationController
-  def new
-    @user = current_user
-  end
-
   def index
     conn = Faraday.new(url:'https://api.themoviedb.org/3/movie?api_key=fffb60883e9ce66c7fd35f9e77ec9682')
     @movies = []

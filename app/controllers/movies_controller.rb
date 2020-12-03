@@ -30,4 +30,6 @@ class MoviesController < ApplicationController
       @movies = @movies.first(40)
     end
   end
+
+  def show; end
 end

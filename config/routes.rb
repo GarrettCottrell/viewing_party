@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/movies', to: 'movies#index'
   get '/', to: 'welcome#index'
   post '/sessions', to: 'sessions#create'
+  get '/movies/:id', to: 'movies#show'
 end

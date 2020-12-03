@@ -8,6 +8,7 @@ describe 'As an authenticated user' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(garrett)
       visit '/discover'
       click_button 'Find Top Rated Movies'
+      save_and_open_page
       expect(current_path).to eq('/movies')
       expect(page).to have_css('.title')
       within '.movie-0' do

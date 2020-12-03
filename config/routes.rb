@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get '/movies', to: 'movies#index'
   get '/', to: 'welcome#index'
   post '/sessions', to: 'sessions#create'
-  get '/movies/:id', to: 'movies#show'
+  get '/movies/:id', to: 'movies#show' #as: :movie - will change it into movie path
 end

@@ -5,12 +5,23 @@
 <h3>Vote Average: <%= @movie_details[:vote_average] %></h3>
 
 <h3>Genre(s):
-  <% @movie_details[:genres].each do |genre| %>
-    <%= genre[:name] %><% if(genre != @movie_details[:genres].last) %>,
-    <% end %>
-  <% end %>
+  <%= @genres %>
 </h3>
 
 <h3>Summary: <%= @movie_details[:overview] %></h3>
 
 <h3>Runtime: <%= @movie_details[:runtime] / 60 %> hr <%= @movie_details[:runtime] % 60 %> min</h3>
+
+<h3>Cast:
+<% @credits.each_with_index do |credit, index| %>
+    <ul class="cast-<%= index %>">
+      <li class="actor"><%= credit[:name] %>
+    </ul>
+  <% end %>
+
+<h3><%= @reviews[:total_results] %> Reviews:
+<% @reviews[:results].each_with_index do |review, index| %>
+    <ul class="review_result-<%= index %>">
+      <li class="review_content"><%= review[:content] %>
+    </ul>
+  <% end %>

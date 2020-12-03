@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
   get '/movies/:id', to: 'movies#show' #as: :movie - will change it into movie path
 
-  #viewing_party
-  get '/viewing_party/new', to: 'viewing_parties#new'
+  #events
+  get '/events/new', to: 'events#new'
 end

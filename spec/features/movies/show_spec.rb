@@ -10,8 +10,7 @@ describe 'As an authenticated user' do
       visit "/movies/761053"
 
       click_button('Create Viewing Party for Movie')
-      expect(current_path).to eq('/viewing_party/new')
-
+      expect(current_path).to eq('/events/new')
     end
 
     it 'I see should movie information including title, average vote, runtime, genre and summary' do

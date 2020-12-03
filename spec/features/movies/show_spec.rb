@@ -32,7 +32,6 @@ describe 'As an authenticated user' do
 
     it "I see the total count of reviews and each review's author and information" do
       visit "/movies/278"
-      save_and_open_page
       expect(page).to have_content('6 Reviews')
       within '.review-result-0' do
         expect(page).to have_content("very good movie")

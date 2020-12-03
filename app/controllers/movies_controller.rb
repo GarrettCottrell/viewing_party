@@ -48,5 +48,7 @@ class MoviesController < ApplicationController
     response = conn.get("/3/movie/#{params[:id]}/reviews")
     @reviews = JSON.parse(response.body, symbolize_names:true)
     #can also make helper methods here for setting up api calls
+      # Maybe? response = conn.get(cast_members)
+
   end
 end

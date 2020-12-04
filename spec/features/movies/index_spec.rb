@@ -22,14 +22,14 @@ describe 'As an authenticated user' do
     show page for that movie' do
       garrett = User.create(name: 'Garrett', email: 'garrett.cottrell', password: '1234')
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(garrett)
-      visit '/discover'
+      visit '/discover' #use path here
       click_button 'Find Top Rated Movies'
       expect(current_path).to eq('/movies')
       expect(page).to have_css('.title')
       within '.movie-0' do
         click_link
       end
-      expect(current_path).to eq("/movies/#{761053}")
+      expect(current_path).to eq('/movies/761053') #use path helpers for uri paths
     end
 
     it 'Each movie has the vote average associated with it on the page' do

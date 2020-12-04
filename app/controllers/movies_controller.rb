@@ -1,6 +1,12 @@
+require 'figaro'
+Figaro.application = Figaro::Application.new(environment: 'production', path: File.expand_path('../config/application.yml', __FILE__))
+Figaro.load
 class MoviesController < ApplicationController
   def index
-    conn = Faraday.new(url:'https://api.themoviedb.org/3/movie?api_key=fffb60883e9ce66c7fd35f9e77ec9682')
+    conn = Faraday.new(
+      url: 'https://api.themoviedb.org/3/movie',
+      params: {api_key: ENV['viewing_party_key'] }
+    )
     @movies = []
     page = 1
 
@@ -28,7 +34,10 @@ class MoviesController < ApplicationController
   end
 
   def show
-    conn = Faraday.new(url:'https://api.themoviedb.org/3/movie?api_key=fffb60883e9ce66c7fd35f9e77ec9682')
+    conn = Faraday.new(
+      url: 'https://api.themoviedb.org/3/movie',
+      params: {api_key: ENV['viewing_party_key'] }
+    )
 
     response = conn.get("/3/movie/#{params[:id]}")
     @movie_details = JSON.parse(response.body, symbolize_names: true)

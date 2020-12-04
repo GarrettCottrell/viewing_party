@@ -22,7 +22,8 @@
 <h3><%= @reviews[:total_results] %> Reviews:
 <% @reviews[:results].each_with_index do |review, index| %>
     <ul class="review-result-<%= index %>">
-      <li class="review-content"><%= review[:content] %>
-      <li class="review-author"><%= review[:author] %>
+      <li class="review-author">Author: <%= review[:author] %>
+      <p class="review-content"><%= review[:content] %></p>
+        <br>
     </ul>
   <% end %>

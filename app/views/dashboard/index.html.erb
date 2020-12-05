@@ -4,7 +4,12 @@
   <%= button_to 'Discover Movies', '/discover', method: :get %>
 
   <h3>Viewing Parties:</h3>
-  
+  <%current_user.events.each do |event|%>
+    <%= event.movie.name %>
+    <%= event.date %>
+    <%= event.start_time %>
+    <%= event.find_user_event(current_user).status %>
+  <% end %>
 <% else %>
   <h4> Please <%= link_to 'Register', '/registration', method: :get %> to view this page </h4>
 <% end %>

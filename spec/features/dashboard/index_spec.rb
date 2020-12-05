@@ -24,8 +24,12 @@ require 'rails_helper'
 
     it 'I see movie title, date and time and status of invited for all of
     the viewing parties that I am invited to' do
-      shawshank = Movie.create(movie_title: 'Shawshank Redemption', api_id: 1337)
-      viewing_party_one = ViewingParty.create!(movie_id: 'Shawshank Redemption', date_and_time: 12/5/2020,  )
+      shawshank = Movie.create(name: 'Shawshank Redemption', api_id: 1337)
+      viewing_party_one = Event.create!(movie_id: shawshank.id,
+                                               date: 12/5/2020,
+                                               start_time: '12:00',
+                                               duration: "90",
+                                               host_id: garrett.id)
       visit dashboard_index_path
       expect(page).to have_content(viewing_party_one.movie_title)
       expect(page).to have_content(viewing_party_one.date_and_time)

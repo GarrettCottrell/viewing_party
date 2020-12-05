@@ -55,8 +55,7 @@ describe User, type: :model do
     it { should validate_presence_of :password_confirmation }
   end
 
-  # describe "relationships" do
-  #   it { should have_many :orders }
-  #   it { should belong_to(:merchant).optional(true) }#.conditions(role: :merchant) }
-  # end
+  describe "relationships" do
+    it { should have_many :user_events }
+  end
 end

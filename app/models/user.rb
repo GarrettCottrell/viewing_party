@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :password, confirmation: { case_sensitive: true }
   validates :password_confirmation, presence: true, on: :create
+
+  has_many :user_events
 end

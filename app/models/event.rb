@@ -4,4 +4,6 @@ class Event < ApplicationRecord
   validates_presence_of :start_time
   validates_presence_of :duration
   #validates_presence_of :host_id
+
+  has_many :user_events
 end

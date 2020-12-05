@@ -6,4 +6,5 @@ class Event < ApplicationRecord
   #validates_presence_of :host_id
 
   has_many :user_events
+  has_many :users, through: :user_events
 end

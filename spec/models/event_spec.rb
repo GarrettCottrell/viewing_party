@@ -11,5 +11,6 @@ describe Event, type: :model do
   describe 'relationships' do
     it { should belong_to :movie}
     it { should have_many :user_events }
+    it { should have_many(:users).through :user_events}
   end
 end

@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, on: :create
 
   has_many :user_events
+  has_many :events, through: :user_events
 end

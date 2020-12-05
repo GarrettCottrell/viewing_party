@@ -7,4 +7,8 @@ class Event < ApplicationRecord
 
   has_many :user_events
   has_many :users, through: :user_events
+
+  def find_user_event(user)
+    user_events.where(user: user).first
+  end
 end

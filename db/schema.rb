@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_05_205830) do
+ActiveRecord::Schema.define(version: 2020_12_05_212026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(version: 2020_12_05_205830) do
     t.integer "api_id"
   end
 
+  create_table "user_events", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "event_id"
+    t.index ["event_id"], name: "index_user_events_on_event_id"
+    t.index ["user_id"], name: "index_user_events_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -35,4 +42,6 @@ ActiveRecord::Schema.define(version: 2020_12_05_205830) do
   end
 
   add_foreign_key "events", "movies"
+  add_foreign_key "user_events", "events"
+  add_foreign_key "user_events", "users"
 end

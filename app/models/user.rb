@@ -9,4 +9,8 @@ class User < ApplicationRecord
 
   has_many :user_events
   has_many :events, through: :user_events
+
+  #Dependent destory?
+  has_many :friendships
+  has_many :friends, through: :friendships
 end

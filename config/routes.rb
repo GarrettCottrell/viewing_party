@@ -22,4 +22,7 @@ Rails.application.routes.draw do
 
   # events
   resources :events, only: %i[new]
+
+  # Friendships
+  resources :friendships, only: %i[create]
 end

@@ -3,6 +3,19 @@
 
   <%= button_to 'Discover Movies', '/discover', method: :get %>
 
+  <h3>Friends:</h3>
+  <%= form_tag '/friendships', method: :post do %>
+    <%= text_field_tag :friend_search, "Friend's Email" %>
+    <%= submit_tag 'Add Friend' %>
+    <% end %>
+  <% if current_user.friends.empty? %>
+    <p>You currently have no friends</p>
+  <% else %>
+    <% current_user.friends.each do |friend| %>
+      <%= friend.name %> Email: <%= friend.email %>
+    <% end %>
+  <% end %>
+
   <h3>Viewing Parties:</h3>
   <%current_user.events.each do |event|%>
     <%= event.movie.name %>

@@ -5,6 +5,7 @@ require 'rails_helper'
     before :each do
       @garrett = User.create!(name: 'Garrett', email: 'garrett.cottrell', password: '1234', password_confirmation: '1234')
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@garrett)
+      @nick = User.create!(name: 'Nick', email: 'Nick@example.com', password: '1234', password_confirmation: '1234')
     end
 
     it 'I should see a welcome message' do
@@ -19,7 +20,15 @@ require 'rails_helper'
       expect(current_path).to eq('/discover')
     end
 
-    xit 'Friends Section' do
+    it 'Friends Section' do
+      visit '/dashboard'
+
+      expect(page).to have_content('You currently have no friends')
+      fill_in 'friend_search', with: "#{@nick.email}"
+      click_button 'Add Friend'
+
+      expect(page).to have_content("#{@nick.email}")
+      expect(page).to_not have_content('You currently have no friends')
     end
 
     it 'I see movie title, date and time and status of invited for all of

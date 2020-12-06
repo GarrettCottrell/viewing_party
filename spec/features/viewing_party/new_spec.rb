@@ -18,7 +18,6 @@ describe 'As an authenticated user' do
       click_button 'Create Viewing Party for Movie'
       expect(current_path).to eq(new_event_path)
       expect(page).to have_content('Shawshank Redemption')
-      save_and_open_page
       expect(page).to have_content(142)
 
       expect(page).to_not have_field('Movie Title')
@@ -26,7 +25,6 @@ describe 'As an authenticated user' do
       fill_in 'Day', with: '12/20/20'
       fill_in 'Time', with: '1:00p'
       #Friends?
-      save_and_open_page
       click_button 'Create Party'
     end
   end

@@ -13,4 +13,8 @@ class User < ApplicationRecord
   #Dependent destory?
   has_many :friendships
   has_many :friends, through: :friendships
+
+  def self.find_friend(friend)
+    where(email:friend)[0]
+  end
 end

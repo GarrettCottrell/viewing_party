@@ -1,0 +1,14 @@
+<h1>Viewing Party Deatils</h1>
+<%= form_tag dashboard_index_path do %>
+  <%= label_tag :movie_title %>
+  <p><%= params[:movie_title] %></p>
+
+  <%= label_tag :duration %>
+  <%= text_field_tag :duration, "#{params[:duration]}"%>
+
+  <%= label_tag :day %>
+  <%= date_field_tag :day %>
+
+  <%= label_tag :time %>
+  <%= time_field_tag :time %>
+<% end %>

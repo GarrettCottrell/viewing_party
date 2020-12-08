@@ -1,6 +1,6 @@
 class MovieService
-  def self.find_by_title(title)
-    response = conn.get("/3/search/movie?&query=#{title}")
+  def self.find_by_title(title, page)
+    response = conn.get("/3/search/movie?&query=#{title}&page=#{page}")
     json = JSON.parse(response.body, symbolize_names: true)
     json[:results]
   end

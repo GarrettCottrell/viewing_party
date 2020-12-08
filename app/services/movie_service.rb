@@ -5,6 +5,12 @@ class MovieService
     json[:results]
   end
 
+  def self.top_rated(page)
+    response = conn.get("/3/movie/top_rated?&page=#{page}")
+    json = JSON.parse(response.body, symbolize_names: true)
+    json[:results]
+  end
+
   def self.find_runtime(movie_id)
     response = conn.get("/3/movie/#{movie_id}")
     json = JSON.parse(response.body, symbolize_names: true)

@@ -21,5 +21,8 @@ Rails.application.routes.draw do
   resources :sessions, only: %i[create]
 
   # events
-  resources :events, only: %i[new]
+  resources :events, only: %i[new create]
+
+  # Friendships
+  resources :friendships, only: %i[create]
 end

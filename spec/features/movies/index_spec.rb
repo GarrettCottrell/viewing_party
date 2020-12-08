@@ -40,7 +40,7 @@ describe 'As an authenticated user' do
       expect(current_path).to eq('/movies')
       expect(page).to have_css('.title')
       within '.movie-0' do
-       expect(page).to have_content(9.3)
+       expect(page).to have_content(9.2)
       end
     end
 

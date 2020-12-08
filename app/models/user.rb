@@ -14,7 +14,7 @@ class User < ApplicationRecord
   has_many :friendships
   has_many :friends, through: :friendships
 
-  def self.find_friend(friend)
-    where(email: friend)[0]
+  def self.find_friend(friend_email)
+    where(email: friend_email)[0]
   end
 end

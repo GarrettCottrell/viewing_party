@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 2020_12_06_190800) do
     t.index ["movie_id"], name: "index_events_on_movie_id"
   end
 
+  create_table "follows", force: :cascade do |t|
+    t.integer "follower_id"
+    t.integer "followed_user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "friendships", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "friend_id"

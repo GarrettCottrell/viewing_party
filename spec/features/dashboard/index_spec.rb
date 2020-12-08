@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-  describe "When I visit '/dashboard'" do
-    describe 'As an authenticated user' do
+describe "When I visit '/dashboard'" do
+  describe 'As an authenticated user' do
     before :each do
       @garrett = User.create!(name: 'Garrett', email: 'garrett.cottrell', password: '1234', password_confirmation: '1234')
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@garrett)
@@ -65,6 +65,27 @@ require 'rails_helper'
       expect(page).to have_content(viewing_party_one.date)
       expect(page).to have_content(viewing_party_one.start_time)
       expect(page).to have_content('Hosting')
+    end
+
+    it 'I see a search field where I can enter a users email and if they are
+    in the system, I am able to press the button to add them as a friend' do
+      visit dashboard_index_path
+      fill_in :friend_search, with: @nick.email
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content(@nick.name)
+      expect(page).to have_content("Email: #{@nick.email}")
+    end
+
+    it 'I see a search field where I can enter a users email and if they are
+    not in the system, then I receive a notice that they were not in the system
+    and they are not added as a friend' do
+      visit dashboard_index_path
+      fill_in :friend_search, with: 'testbademail.com'
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content('User does not exist in the database')
+      expect(page).to have_content('You currently have no friends')
     end
   end
 

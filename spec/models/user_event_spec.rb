@@ -30,7 +30,7 @@ describe UserEvent, type: :model do
                                 event_id: viewing_party_one.id,
                                 status: 'Invited')
 
-      expect(UserEvent.find_guest_list(viewing_party_one.id)).to eq([garrett, nick, shaun, ian])
+      expect(UserEvent.find_guest_list(viewing_party_one.id)).to eq([nick, shaun, ian])
     end
   end
 end

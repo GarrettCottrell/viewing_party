@@ -17,11 +17,15 @@
   <% end %>
 
   <h3>Viewing Parties:</h3>
-  <%current_user.events.each do |event|%>
-    <%= event.movie.name %>
-    <%= event.date %>
-    <%= event.start_time %>
-    <%= event.find_user_event(current_user).status %>
+  <% if current_user.events.empty? %>
+    <p> You currently have no parties </p>
+  <% else %>
+    <%current_user.events.each do |event|%>
+      <%= event.movie.name %>
+      <%= event.date %>
+      <%= event.start_time %>
+      <%= event.find_user_event(current_user).status %>
+    <% end %>
   <% end %>
 <% else %>
   <h4> Please <%= link_to 'Register', '/registration', method: :get %> to view this page </h4>

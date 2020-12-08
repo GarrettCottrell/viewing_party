@@ -27,17 +27,11 @@ describe 'As an authenticated user' do
       fill_in 'Duration', with: 160
       fill_in 'Day', with: '12/20/20'
       fill_in 'Time', with: '1:00p'
-      check "#{@nick.name}"
-      check "#{@ian.name}"
+      check @nick.name
+      check @ian.name
       click_button 'Create Party'
       expect(current_path).to eq(dashboard_index_path)
-      expect(Event.last.user_events.users).to eq([@garrett, @nick, @ian])
-      expect(Event.last.user_events.users).to_not eq([@shaun])
+      expect(UserEvent.find_guest_list(Event.last.id)).to eq([@nick, @ian])
     end
   end
 end
-
-# Details When the party is created,
-# the authenticated user should be redirected back to the dashboard where
-# the new event is shown. The event should also be seen by any friends that were
-# invited when they log in.

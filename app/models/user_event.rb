@@ -7,8 +7,11 @@ class UserEvent < ApplicationRecord
   end
 
   def self.find_guest_list(event_id)
-    self.find_user_event(event_id).map do |event|
-      event.user
+    user_events = self.find_user_event(event_id).find_all do |event|
+      event.status == "Invited"
+    end
+    user_events.map do |user_event|
+      user_event.user
     end
   end
 end

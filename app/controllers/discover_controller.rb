@@ -1,5 +1,4 @@
 class DiscoverController < ApplicationController
-  def new
-    @user = current_user
-  end
+  # why don't we need this action??
+  def index; end
 end

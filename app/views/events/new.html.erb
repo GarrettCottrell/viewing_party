@@ -5,7 +5,8 @@
   <p><%= params[:movie_title] %></p>
 
   <%= label_tag :duration %>
-  <%= text_field_tag :duration, "#{params[:duration]}"%>
+  <%= hidden_field_tag :runtime, params[:duration] %>
+  <%= text_field_tag :duration, "#{params[:duration]}" %>
 
   <%= label_tag :day %>
   <%= date_field_tag :day %>

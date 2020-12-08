@@ -9,7 +9,8 @@ class EventsController < ApplicationController
       duration: params[:duration],
       movie_id: movie.id
     )
-    if event.save
+    unless invalid_event?(event)
+      event.save
       UserEvent.create(user_id: current_user.id, event_id: event.id, status: 'Hosting')
       current_user.friends.each do |friend|
         UserEvent.create(user_id: friend.id, event_id: event.id, status: 'Invited') if params[friend.name]
@@ -18,7 +19,11 @@ class EventsController < ApplicationController
       redirect_to dashboard_index_path
     else
       flash[:error] = 'Something went wrong, please try again.'
-      render :new
+      render new_event_path
     end
+  end
+
+  def invalid_event?(event)
+    event.start_time == '' || event.date == '' || event.duration == '' || event.duration < params[:runtime].to_i
   end
 end

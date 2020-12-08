@@ -27,7 +27,7 @@ describe 'As a visitor' do
 
       click_button 'Sign in'
       expect(current_path).to eq(welcome_path)
-      expect(page).to have_content('Username and/or password is incorrect')
+      expect(page).to have_content('Email and/or password is incorrect')
     end
 
     it 'If I enter an invalid password, I am redirected back to the welcome page with an error message' do
@@ -38,7 +38,7 @@ describe 'As a visitor' do
 
       click_button 'Sign in'
       expect(current_path).to eq(welcome_path)
-      expect(page).to have_content('Username and/or password is incorrect')
+      expect(page).to have_content('Email and/or password is incorrect')
     end
 
     it 'I see a link to register and when I click on that link, I am taken to the registration page' do

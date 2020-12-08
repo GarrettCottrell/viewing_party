@@ -1,7 +1,7 @@
 <h1>Welcome <%= current_user.name %>!</h1>
 
 <h1><%= @movie_details[:original_title] %></h1>
- <%= button_to 'Create Viewing Party for Movie', '/events/new', method: :get, params: {movie_title: @movie_details[:original_title], duration: @movie_details[:runtime]} %>
+ <%= button_to 'Create Viewing Party for Movie', '/events/new', method: :get, params: {api_id: @movie_details[:id], movie_title: @movie_details[:original_title], duration: @movie_details[:runtime]} %>
 
 <h3>Vote Average: <%= @movie_details[:vote_average] %></h3>
 

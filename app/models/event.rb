@@ -11,4 +11,5 @@ class Event < ApplicationRecord
   def find_user_event(user)
     user_events.where(user: user).first
   end
+
 end

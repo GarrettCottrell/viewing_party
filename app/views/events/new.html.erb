@@ -1,6 +1,7 @@
 <h1>Viewing Party Details</h1>
-<%= form_tag dashboard_index_path do %>
+<%= form_tag events_path do %>
   <%= label_tag :movie_title %>
+  <%= hidden_field_tag :movie_title, params[:movie_title] %>
   <p><%= params[:movie_title] %></p>
 
   <%= label_tag :duration %>
@@ -11,4 +12,15 @@
 
   <%= label_tag :time %>
   <%= time_field_tag :time %>
+
+  <%= hidden_field_tag :api_id, params[:api_id] %>
+
+  <% current_user.friends.each do |friend| %>
+    <br>
+    <%= label_tag friend.name%>
+    <%= check_box_tag friend.name, friend.email%>
+    <% end %>
+    <br>
+
+  <%= submit_tag 'Create Party' %>
 <% end %>

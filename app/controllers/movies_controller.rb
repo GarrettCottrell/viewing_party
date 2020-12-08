@@ -6,42 +6,10 @@ class MoviesController < ApplicationController
     if params[:Search_By_Movie_Title]
       title = params[:Search_By_Movie_Title]
       @movies = MovieFacade.search(title)
-      binding.pry
     else
       @movies = MovieFacade.top_40
     end
   end
-
-  # def index
-  #   conn = Faraday.new(
-  #     url: 'https://api.themoviedb.org/3/movie',
-  #     params: { api_key: ENV['viewing_party_key'] }
-  #   )
-  #   @movies = []
-  #   page = 1
-  #   if params[:Search_By_Movie_Title]
-  #     until @movies.count >= 40
-  #       response = conn.get("/3/search/movie?&query=#{params[:Search_By_Movie_Title]}")
-  #
-  #       json = JSON.parse(response.body, symbolize_names: true)
-  #       @movies << json[:results]
-  #       @movies = @movies.flatten
-  #       page += 1
-  #     end
-  #
-  #   else
-  #     until @movies.count >= 40
-  #       response = conn.get("/3/movie/top_rated?&page=#{page}")
-  #
-  #       json = JSON.parse(response.body, symbolize_names: true)
-  #
-  #       @movies << json[:results]
-  #       @movies = @movies.flatten
-  #       page += 1
-  #     end
-  #     @movies = @movies.first(40)
-  #   end
-  # end
 
   def show
     conn = Faraday.new(

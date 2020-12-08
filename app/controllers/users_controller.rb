@@ -8,6 +8,7 @@ class UsersController < ApplicationController
       redirect_to '/dashboard'
     else
       flash[:error] = @user.errors.full_messages.uniq
+      render :new
     end
   end
 

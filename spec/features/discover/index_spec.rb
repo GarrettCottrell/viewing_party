@@ -27,7 +27,7 @@ describe 'As an authenticated user' do
       click_button 'Find Movies'
       expect(current_path).to eq('/movies')
       expect(page).to have_css('.title')
-      within '.movie-0' do 
+      within '.movie-0' do
         expect(page).to have_content('Sunday')
       end
     end

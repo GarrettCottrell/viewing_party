@@ -14,7 +14,7 @@
 
   <% @movies.each_with_index do |movie, index| %>
     <ul class="movie-<%= index %>">
-      <li class="title"><%= link_to "#{movie[:title]}", "/movies/#{movie[:id]}" %> Vote Average: <%= movie[:vote_average] %>
+      <li class="title"><%= link_to "#{movie.title}", "/movies/#{movie.id}" %> Vote Average: <%= movie.vote_average %>
     </ul>
   <% end %>
 

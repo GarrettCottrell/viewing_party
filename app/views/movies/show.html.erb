@@ -1,30 +1,34 @@
 <h1>Welcome <%= current_user.name %>!</h1>
 
-<h1><%= @movie_details[:original_title] %></h1>
- <%= button_to 'Create Viewing Party for Movie', '/events/new', method: :get, params: {api_id: @movie_details[:id], movie_title: @movie_details[:original_title], duration: @movie_details[:runtime]} %>
+<h1><%= @movie.original_title %></h1>
+ <%= button_to 'Create Viewing Party for Movie', '/events/new', method: :get, params: {api_id: @movie.api_id, movie_title: @movie.original_title, duration: @movie.runtime} %>
 
-<h3>Vote Average: <%= @movie_details[:vote_average] %></h3>
+<h3>Vote Average: <%= @movie.average_vote %></h3>
 
 <h3>Genre(s):
-  <%= @genres %>
+  <%= @movie.genres %>
 </h3>
 
-<h3>Summary: <%= @movie_details[:overview] %></h3>
+<h3>Summary: <%= @movie.overview %></h3>
 
-<h3>Runtime: <%= @movie_details[:runtime] / 60 %> hr <%= @movie_details[:runtime] % 60 %> min</h3>
+<h3>Runtime: <%= @movie.runtime_display %></h3>
 
 <h3>Cast:
-<% @credits.each_with_index do |credit, index| %>
-    <ul class="cast-<%= index %>">
-      <li class="actor"><%= credit[:name] %> / <%= credit[:character] %>
-    </ul>
+  <% if @movie.cast.empty? %>
+    Cast information unavailable.</h3>
+  <% else %>
+    <% @movie.cast.each_with_index do |cast, index| %>
+      <ul class="cast-<%= index %>">
+        <li class="actor"><%= cast[:name] %> / <%= cast[:character] %>
+      </ul>
+    <% end %>
   <% end %>
 
-<h3><%= @reviews[:total_results] %> Reviews:
-<% @reviews[:results].each_with_index do |review, index| %>
+<h3><%= @movie.total_reviews %> Reviews:</h3>
+  <% @movie.reviews.each_with_index do |review, index| %>
     <ul class="review-result-<%= index %>">
       <li class="review-author">Author: <%= review[:author] %>
       <p class="review-content"><%= review[:content] %></p>
-        <br>
+      <br>
     </ul>
   <% end %>

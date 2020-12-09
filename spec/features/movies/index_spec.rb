@@ -72,7 +72,7 @@ describe 'As an authenticated user' do
       fill_in :Search_By_Movie_Title, with: 'Sunday'
       expect(current_path).to eq('/movies')
       expect(page).to have_css('.title')
-      within '.movie-0' do 
+      within '.movie-0' do
         expect(page).to have_content('Sunday')
       end
     end

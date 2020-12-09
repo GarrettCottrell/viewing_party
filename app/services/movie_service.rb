@@ -11,10 +11,20 @@ class MovieService
     json[:results]
   end
 
-  def self.find_runtime(movie_id)
+  def self.find_details(movie_id)
     response = conn.get("/3/movie/#{movie_id}")
     json = JSON.parse(response.body, symbolize_names: true)
-    json[:runtime]
+  end
+
+  def self.find_cast(movie_id)
+    response = conn.get("/3/movie/#{movie_id}/credits")
+    json = JSON.parse(response.body, symbolize_names: true)
+    json[:cast].first(10)
+  end
+
+  def self.find_reviews(movie_id)
+    response = conn.get("/3/movie/#{movie_id}/reviews")
+    reviews = JSON.parse(response.body, symbolize_names: true)
   end
 
   private

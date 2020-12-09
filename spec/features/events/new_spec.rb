@@ -17,6 +17,7 @@ describe 'As an authenticated user' do
     Start Time: field to select time
     Checkboxes next to each friend (if user has friends)
     Button to create a party' do
+      # move it description into comment -> shorten it block for VCR
 
       visit '/movies/278'
       click_button 'Create Viewing Party for Movie'
@@ -29,14 +30,14 @@ describe 'As an authenticated user' do
       fill_in 'Duration', with: 160
       fill_in 'Day', with: '12/20/20'
       fill_in 'Time', with: '1:00p'
-      check @nick.name
-      check @ian.name
+      check @nick.id
+      check @ian.id
       click_button 'Create Party'
       expect(current_path).to eq(dashboard_index_path)
       expect(UserEvent.find_guest_list(Event.last.id)).to eq([@nick, @ian])
     end
 
-    xit 'If I do not completely fill out the new event form, I am redirected back to events new with an error message' do
+    it 'If I do not completely fill out the new event form, I am redirected back to events new with an error message' do
       visit '/movies/278'
       click_button 'Create Viewing Party for Movie'
       expect(current_path).to eq(new_event_path)
@@ -46,11 +47,10 @@ describe 'As an authenticated user' do
       expect(page).to_not have_field('Movie Title')
       fill_in 'Duration', with: 160
       fill_in 'Time', with: '1:00p'
-      check @nick.name
-      check @ian.name
+      check @nick.id
+      check @ian.id
       click_button 'Create Party'
-# why don't this work??
-      expect(current_path).to eq(new_event_path)
+      expect(current_path).to eq(events_path)
       expect(page).to have_content('Something went wrong, please try again.')
     end
   end

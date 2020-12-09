@@ -6,6 +6,7 @@ describe 'As an authenticated user' do
       nick = User.create(name: 'Nick', email: 'nick@nick.com', password: '1234')
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(nick)
     end
+
     it 'I see a button to create a viewing party' do
       visit "/movies/761053"
       click_button('Create Viewing Party for Movie')
@@ -19,6 +20,13 @@ describe 'As an authenticated user' do
       expect(page).to have_content("Runtime: 2 hr 22 min")
       expect(page).to have_content("Genre(s): Drama, Crime")
       expect(page).to have_content("Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.")
+    end
+
+    it "If the movie's API information is missing fields, I see a descriptive message for those fields" do
+      visit "/movies/761053"
+      expect(page).to have_content("Runtime: Runtime information unavailable.")
+      expect(page).to have_content("Genre(s): No genres found.")
+      expect(page).to have_content("Cast: Cast information unavailable.")
     end
 
     it 'I see the first 10 cast members' do

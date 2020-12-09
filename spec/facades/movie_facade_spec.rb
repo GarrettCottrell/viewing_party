@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Movie Facade' do
-  it 'can search for an array of movie poros ' do
+describe 'movie facade' do
+  it 'search for poros', :vcr do
     movies = MovieFacade.search('Sunday')
 
     expect(movies).to be_an(Array)
@@ -9,7 +9,7 @@ describe 'Movie Facade' do
     expect(movies.first.class).to eq(MoviePoro)
   end
 
-  it 'can find the 40 top rated movies as movie poros' do
+  it 'find top rated poros', :vcr do
     movies = MovieFacade.top_40
 
     expect(movies).to be_an(Array)
@@ -18,7 +18,7 @@ describe 'Movie Facade' do
     expect(movies.first.vote_average >= movies.second.vote_average).to eq(true)
   end
 
-  it 'can get the details a movie with a movie id' do
+  it 'movie details poro', :vcr do
     movie = MovieFacade.get_details(278)
 
     expect(movie).to be_a(MoviePoro)

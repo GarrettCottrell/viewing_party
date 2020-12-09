@@ -18,10 +18,10 @@
 
   <% current_user.friends.each do |friend| %>
     <br>
-    <%= label_tag friend.name%>
-    <%= check_box_tag friend.name, friend.email%>
-    <% end %>
-    <br>
+    <%= label_tag friend.name %>
+    <%= check_box_tag friend.id, friend.email %>
+  <% end %>
+  <br>
 
   <%= submit_tag 'Create Party' %>
 <% end %>

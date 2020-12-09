@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Movie Service' do
-  it 'can search for movie information with a title and page number' do
+describe 'movie service', :vcr do
+  it 'find by title method', :vcr do
     response = MovieService.find_by_title('shawshank', 1)
 
     expect(response).to be_an(Array)
@@ -16,7 +16,7 @@ describe 'Movie Service' do
     expect(response.length).to eq(2)
   end
 
-  it 'can find information for top rated movies' do
+  it 'top rated method', :vcr do
     response = MovieService.top_rated(1)
 
     expect(response).to be_an(Array)
@@ -31,7 +31,7 @@ describe 'Movie Service' do
     expect(response.length).to eq(20)
   end
 
-  it 'can find movie details with a movie id' do
+  it 'find details method', :vcr do
     response = MovieService.find_details(278)
 
     expect(response).to be_a(Hash)
@@ -48,7 +48,7 @@ describe 'Movie Service' do
     expect(response[:genres][0][:name]).to be_a(String)
   end
 
-  it 'can find the cast of a movie with a movie id' do
+  it 'find cast method', :vcr do
     response = MovieService.find_cast(278)
 
     expect(response).to be_an(Array)
@@ -63,7 +63,7 @@ describe 'Movie Service' do
     expect(response.length).to eq(10)
   end
 
-  it 'can find reviews for a movie with a movie id' do
+  it 'find reviews method', :vcr do
     response = MovieService.find_reviews(278)
 
     expect(response).to be_a(Hash)

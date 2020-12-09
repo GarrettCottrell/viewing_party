@@ -1,12 +1,17 @@
 class MovieService
   def self.find_by_title(title, page)
-    response = conn.get("/3/search/movie?&query=#{title}&page=#{page}")
+    response = conn.get("/3/search/movie") do |req|
+      req.params[:query] = title
+      req.params[:page] = page
+    end
     json = JSON.parse(response.body, symbolize_names: true)
     json[:results]
   end
 
   def self.top_rated(page)
-    response = conn.get("/3/movie/top_rated?&page=#{page}")
+    response = conn.get("/3/movie/top_rated") do |req|
+      req.params[:page] = page
+    end
     json = JSON.parse(response.body, symbolize_names: true)
     json[:results]
   end

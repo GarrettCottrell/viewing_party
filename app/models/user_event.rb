@@ -10,8 +10,6 @@ class UserEvent < ApplicationRecord
     user_events = find_user_event(event_id).find_all do |event|
       event.status == 'Invited'
     end
-    user_events.map do |user_event|
-      user_event.user
-    end
+    user_events.map(&:user)
   end
 end

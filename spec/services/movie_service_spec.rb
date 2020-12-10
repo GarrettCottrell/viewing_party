@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'movie service', :vcr do
   it 'find by title method', :vcr do
-    response = MovieService.find_by_title('shawshank', 1)
+    response = MovieService.search_by_title('shawshank', 1)
 
     expect(response).to be_an(Array)
     expect(response[0]).to be_a(Hash)

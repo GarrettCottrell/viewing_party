@@ -83,13 +83,32 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('You currently have no friends')
     end
 
+    it 'new friend can not be user', :vcr do
+      visit dashboard_index_path
+      fill_in :friend_search, with: "#{@garrett.email}"
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content("New friends can't be yourself or existing friends")
+      expect(page).to have_content('You currently have no friends')
+    end
+
+    it 'new friend can not be existing friend', :vcr do
+      Friendship.create(user: @garrett, friend: @nick)
+      visit dashboard_index_path
+      fill_in :friend_search, with: "#{@nick.email}"
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content("New friends can't be yourself or existing friends")
+    end
+
     it 'I see a random Chuck Norris joke', :vcr do
       visit dashboard_index_path
       within '.chuck-norris' do
         expect(page).to have_content('Chuck')
-        end
       end
     end
+  end
+
 
   describe 'As a guest' do
     it 'I see a link to register', :vcr do

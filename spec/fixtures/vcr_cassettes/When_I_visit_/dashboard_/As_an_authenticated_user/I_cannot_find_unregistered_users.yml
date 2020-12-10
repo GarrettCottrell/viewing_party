@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:13 GMT
+      - Thu, 10 Dec 2020 04:34:50 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,30 +27,30 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d914f7f8faa77d5eceb38f68a2619b9501607561293; expires=Sat, 09-Jan-21
-        00:48:13 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=dfb92c51b97238c2e0d18cc823fbb2cf21607574890; expires=Sat, 09-Jan-21
+        04:34:50 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7c59a00004955b1a00000000001
+      - 06ec873f180000feae9aa93000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9k6EVj9dVmFagQSmGZgOyOscJh%2FeW0ZKqLDeHR0RPNDVojaR%2BhZxfEC9z18Yd7iRTO3n9CyH0NglZppTcarRCAyfXGi%2FzoZvV%2FdP0CygMcxZuXs%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=3woXdj5toN4EMRulsZdcpn0vixdtklH%2FG64n%2FhacVvnV70z1m%2BhKtVIiwzf4c9ngfTFDGSG%2BO6dBNnCtNsj%2FPpwIK7eAIlDkPr2WkDieEwISyWc%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f58289ac4955-STL
+      - 5ff441782c48feae-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.194739","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"SQM3bvqRTX-Z1vBbC6T3WQ","updated_at":"2020-01-05
-        13:42:26.194739","url":"https://api.chucknorris.io/jokes/SQM3bvqRTX-Z1vBbC6T3WQ","value":"Chuck
-        Norris'' toupee came off an orangutan''s ass."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:13 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:24.142371","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"Lhv6arXDSkqU39p1p4jxmQ","updated_at":"2020-01-05
+        13:42:24.142371","url":"https://api.chucknorris.io/jokes/Lhv6arXDSkqU39p1p4jxmQ","value":"Chuck
+        Norris can make Jenny leave the Block."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:50 GMT
 - request:
     method: get
     uri: https://api.chucknorris.io/jokes/random
@@ -70,7 +70,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:14 GMT
+      - Thu, 10 Dec 2020 04:34:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -78,28 +78,29 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d29ac445778135b2b42994a4d221d2f9a1607561293; expires=Sat, 09-Jan-21
-        00:48:13 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=d271b2c85460ce66c56ab5d220e1a42351607574890; expires=Sat, 09-Jan-21
+        04:34:50 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7c7e20000495d1a1c7000000001
+      - 06ec8741e40000b3cac9a3e000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=TzS5Jh1oslHblGIAsxgmxJOPDpsBFMXYnheLSSXAXw3PXzZVpn23JuUpJs%2Ber8vkKv5isj2%2BzdOLNdmuZpnHOuOPrhcuy7JrgFKxm1sPAwZyFXw%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4esymoDZA%2FYwBq1bd8aKvugrM5NRhw5bN%2BoeMSqm%2BwwbzjxMpWHxH0ggaA8VKk4hypb%2FSelBH0%2FO9%2Fla%2BG030IzaCB4DMzhxLPJyChB%2Fp%2FOumTA%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f5863d35495d-STL
+      - 5ff4417c9913b3ca-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:22.980058","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"V01WBdsgSDKXox9ch45CzA","updated_at":"2020-01-05
-        13:42:22.980058","url":"https://api.chucknorris.io/jokes/V01WBdsgSDKXox9ch45CzA","value":"Chuck
-        Norris can hear silence"}'
-  recorded_at: Thu, 10 Dec 2020 00:48:14 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.984661","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"nR8uediuSXS_hEovUcuwGw","updated_at":"2020-01-05
+        13:42:28.984661","url":"https://api.chucknorris.io/jokes/nR8uediuSXS_hEovUcuwGw","value":"Chuck
+        Norris enjoys big game deep sea fishing. He generally uses a live moose for
+        bait."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:51 GMT
 recorded_with: VCR 6.0.0

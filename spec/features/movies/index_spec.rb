@@ -73,7 +73,8 @@ describe 'movie index page' do
 
   it 'user is not authorized', :vcr do
     visit '/movies'
-    expect(page).to have_content('Please Register to view this page')
+    expect(page).to have_content('Not a member?')
+    expect(page).to have_content('Already a member?')
     expect(page).to_not have_css('.title')
   end
 end

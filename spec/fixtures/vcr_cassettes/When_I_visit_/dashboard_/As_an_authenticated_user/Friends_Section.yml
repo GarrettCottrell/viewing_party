@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:10 GMT
+      - Thu, 10 Dec 2020 04:34:46 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,30 +27,30 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d8641f1e8f39405dd9ec9e0865210db241607561290; expires=Sat, 09-Jan-21
-        00:48:10 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=d5cde0349bf98567292e9e38ae79d19051607574886; expires=Sat, 09-Jan-21
+        04:34:46 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7ba2e00005c3737b76000000001
+      - 06ec872f8d0000b3b2813e4000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=8Uz8R5jlgOe4UxPc99sk7W8IrfatwTZ%2Bntt%2BUpPLJ0gB7LIM9%2F7y6AWHqslbT1SjwRQavX7RbJn0x8w4Nqa0al8TpsenZu9FiUv1XnZ5nvc6zAY%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pfUizTFPjJIFkn%2BPD%2FD2yg2BNix828iA0ezvKS%2Bk5V07oOAp3drOFMC%2BzoVX3xU0MKI2MA9T4vK3Ltaafh3grEVNXX9roltAXPSPLjWEMIq40N8%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f5704e8b5c37-STL
+      - 5ff4415f4d40b3b2-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:29.855523","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"dw4PoOcuQniNQdrj1UZ6gg","updated_at":"2020-01-05
-        13:42:29.855523","url":"https://api.chucknorris.io/jokes/dw4PoOcuQniNQdrj1UZ6gg","value":"Outer
-        space exists because it''s afraid to be on the same planet with Chuck Norris."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:10 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:25.352697","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"eYymdiZOQiuItw6w6jYZFQ","updated_at":"2020-01-05
+        13:42:25.352697","url":"https://api.chucknorris.io/jokes/eYymdiZOQiuItw6w6jYZFQ","value":"Chuck
+        Norris is only demonic on the inside."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:46 GMT
 - request:
     method: get
     uri: https://api.chucknorris.io/jokes/random
@@ -70,7 +70,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:11 GMT
+      - Thu, 10 Dec 2020 04:34:47 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -78,29 +78,28 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d945c4e11b098f5d68af608f303bd39eb1607561290; expires=Sat, 09-Jan-21
-        00:48:10 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=d6d8849364a7b28f56d0a9696fce91bf61607574887; expires=Sat, 09-Jan-21
+        04:34:47 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7bc780000495961896000000001
+      - 06ec87325b0000fef26dbb0000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=jHJvk2b2HITZxRd%2BGqb05i3OFddIDfcJDbp29PPbNfrI9n9QkJ2cYG7fj5DK3%2Fdw2R1gJ2SNZ%2F%2FcrUy2nfPf1K3M3pdck21M9p6SZGE%2FD33fvMM%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2F0HVNyStzGZ5H0nUdhGxYPvw9QSfTGGkMP8eYOzl3LlFLj7vbvWXJDogxt8YOtSROWdEOhFZig%2B2WbZouMMiSgIu4%2F4LcEzQD5XU33V%2FgsejffQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f573fd844959-STL
+      - 5ff44163cfdbfef2-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.766831","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"frvNReIbSW22fxBxfqkIMg","updated_at":"2020-01-05
-        13:42:26.766831","url":"https://api.chucknorris.io/jokes/frvNReIbSW22fxBxfqkIMg","value":"When
-        WeeMan joined the cast of Jackass, he was 6''1 1/2\" tall. Then they had him
-        try to give Chuck Norris a wedgie."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:11 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:23.484083","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"S2X6FftcQhqIDNLgyYr_1w","updated_at":"2020-01-05
+        13:42:23.484083","url":"https://api.chucknorris.io/jokes/S2X6FftcQhqIDNLgyYr_1w","value":"Chuck
+        Norris is Wolverine''s favorite X-Man."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:47 GMT
 recorded_with: VCR 6.0.0

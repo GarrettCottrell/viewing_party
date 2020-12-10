@@ -4,7 +4,7 @@ class MoviePoro
               :cast,
               :reviews_data
 
-  def initialize(search_data = nil, details_data = nil, cast = nil, reviews_data = nil)
+  def initialize(search_data, details_data = nil, cast = nil, reviews_data = nil)
     @search_data = search_data
     @details_data = details_data
     @cast = cast
@@ -38,10 +38,10 @@ class MoviePoro
   end
 
   def runtime_display
-    if @details_data[:runtime] == 0
+    if (@details_data[:runtime]).zero?
       'Runtime information unavailable.'
     else
-      "#{(@details_data[:runtime] / 60)} hr #{(@details_data[:runtime] % 60)} min"
+      "#{@details_data[:runtime] / 60} hr #{@details_data[:runtime] % 60} min"
     end
   end
 

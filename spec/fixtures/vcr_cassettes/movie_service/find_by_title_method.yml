@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 10 Dec 2020 00:48:21 GMT
+      - Thu, 10 Dec 2020 04:35:01 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,11 +42,11 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 045f1e1f031241f3808c557a2b5d6b0a.cloudfront.net (CloudFront)
+      - 1.1 1e5c934b70471a41d2b61ae8c4abeb79.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - 63BxtYnYitvbi4QAFaDXd-7GxabeMxS3TXQ7AlQlAhZldYgtdB_mmQ==
+      - VE_awnkWx2-ZaR8EYD35dO5R6wi18q3eHTr5epd--a_n3G7atB_X5g==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/iNh3BivHyg5sQRPP1KOkzguEX0H.jpg","genre_ids":[18,80],"id":278,"original_language":"en","original_title":"The
@@ -62,7 +62,7 @@ http_interactions:
         the classic The Shawshank Redemption (1994) and how its importance grew higher
         over the years despite being an overlooked film when it was released and not
         getting any Oscars victories when it was nominated as one of the Best Pictures
-        of the Year.","popularity":2.439,"poster_path":"/b7DGM74MRfiLqEveVKwh0jnQ8zX.jpg","release_date":"2001-09-08","title":"Shawshank:
+        of the Year.","popularity":2.477,"poster_path":"/b7DGM74MRfiLqEveVKwh0jnQ8zX.jpg","release_date":"2001-09-08","title":"Shawshank:
         The Redeeming Feature","video":false,"vote_average":8.6,"vote_count":12}],"total_pages":1,"total_results":2}'
-  recorded_at: Thu, 10 Dec 2020 00:48:21 GMT
+  recorded_at: Thu, 10 Dec 2020 04:35:01 GMT
 recorded_with: VCR 6.0.0

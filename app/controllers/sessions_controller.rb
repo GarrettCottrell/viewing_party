@@ -2,15 +2,12 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:email])
     if !user
-      flash[:error] = 'Email and/or password is incorrect'
-      redirect_to '/'
+      redirect_to welcome_path, notice: 'Email and/or password is incorrect'
     elsif user.authenticate(params[:password])
       session[:user_id] = user.id
-      flash[:success] = 'You are now logged in'
-      redirect_to '/dashboard'
+      redirect_to dashboard_index_path, notice: 'You are now logged in'
     else
-      flash[:error] = 'Email and/or password is incorrect'
-      redirect_to '/'
+      redirect_to welcome_path, notice: 'Email and/or password is incorrect'
     end
   end
 end

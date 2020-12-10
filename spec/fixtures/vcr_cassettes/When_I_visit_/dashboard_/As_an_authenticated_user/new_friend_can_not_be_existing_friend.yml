@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:34:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dec5639c7c78de9d77f6cb49d8edf82b01607574892; expires=Sat, 09-Jan-21
+        04:34:52 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec87470c0000b3a65ab88000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=hacnVb%2Bw9aHfj7KH9jC7Om1ZBLSCQEaMcw5cHOTSj4W9F8N%2FjFfWThnZaTeLLoFOjLxfa%2FYeRT7jE%2FgL8ZPyChJOue2kjmuidrjeRx1XlYBHXwE%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff44184dd29b3a6-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:22.980058","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"OXofDvjgTK2YOKlo4G8MXQ","updated_at":"2020-01-05
+        13:42:22.980058","url":"https://api.chucknorris.io/jokes/OXofDvjgTK2YOKlo4G8MXQ","value":"Legend
+        has it that a weak, sickly 6 year boy named Chuck Norris was thrown into the
+        River Styx by a gang of 10 year old bullies. The bullies were never seen or
+        heard of again."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:52 GMT
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:34:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db8e254bc75790c19b129442d527c9a491607574893; expires=Sat, 09-Jan-21
+        04:34:53 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec8749d50000b3d63dbdc000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LbpbbuzxXFztkwd6746hKB%2BVHQFAv0SM1Wc0ran7ABSy4YH1fdHY6j9SK26BQz9in6uDFbkUWbIc1caCP%2BBp0GlKk1jn%2BKOZnEE1boyJC9tz3iE%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff441895bdbb3d6-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:25.099703","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"wHzUsBIATmePkjf_SYIpuw","updated_at":"2020-01-05
+        13:42:25.099703","url":"https://api.chucknorris.io/jokes/wHzUsBIATmePkjf_SYIpuw","value":"When
+        Chuck Norris was in middle school, his English teacher assigned an essay:
+        \"What is courage?\" Chuck received an A+ for turning in a blank page with
+        only his name at the top."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:53 GMT
+recorded_with: VCR 6.0.0

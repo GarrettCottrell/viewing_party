@@ -1,7 +1,6 @@
 class ChuckFacade
-
-  def self.get_joke
-    joke = ChuckService.get_joke
+  def self.find_joke
+    joke = ChuckService.find_joke
 
     ChuckPoro.new(joke)
   end

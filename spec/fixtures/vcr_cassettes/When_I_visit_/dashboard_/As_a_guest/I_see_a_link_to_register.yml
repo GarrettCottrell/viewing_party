@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:15 GMT
+      - Thu, 10 Dec 2020 04:34:54 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,32 +27,28 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d4ff6e8f68e1dd1bb4f38bafa498626e31607561295; expires=Sat, 09-Jan-21
-        00:48:15 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=d08663d32b5dda7b02c00d1517cbc00721607574894; expires=Sat, 09-Jan-21
+        04:34:54 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7cc9b0000494d313b0000000001
+      - 06ec874e370000fec6e4b0f000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=13SQ1Nn7v4YyF0UrSDoVBvMTA6UA5XFOz7LPq98pOh4R46C6SfC32nOdRkWrr00rwQ7k47Isd%2ByptPrvUwAltCmYfxmlFz2cigMO4W486xAB3hg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=R3Vi24LHF1r9E1fp2CcyW4QBmC4F5wTzaAlBSIRVe9gE7YhXfbsXJv%2BxkCYvFCuAausmTHttZDyiwpwSBtK0BUdZMryNIoJmi3SJQvDyd1E6fWM%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f58dc9ab494d-STL
+      - 5ff441905cfcfec6-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.984661","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"s_akNmy_Rn2Q_mBZllZS6Q","updated_at":"2020-01-05
-        13:42:28.984661","url":"https://api.chucknorris.io/jokes/s_akNmy_Rn2Q_mBZllZS6Q","value":"Chuck
-        Norris was the Fourth Wiseman. He gave Baby Jesus the gift of Beard. Jesus
-        loved it so much the other Wisemen were jealous of his obvious gift favoritism.
-        They then used their combined influence to have Chuck Norris omitted from
-        the Bible. All three later died mysteriously from roundhouse-kick related
-        issues."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:15 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.766831","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"XwAvSG6cTl2uOC3wAEWF0g","updated_at":"2020-01-05
+        13:42:26.766831","url":"https://api.chucknorris.io/jokes/XwAvSG6cTl2uOC3wAEWF0g","value":"Chuck
+        Norris sank the Titanic because it was his nickname."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:54 GMT
 recorded_with: VCR 6.0.0

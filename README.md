@@ -1,4 +1,5 @@
 # Viewing Party
+![image](https://user-images.githubusercontent.com/58994078/101726384-accf9c00-3a6f-11eb-905d-cf1e51ccffe2.png)
 
 Viewing party is a web application that allows you to search through MILLIONS of movie data! Once you've found a movie, you can create an event where you invite your friends, select a date and time, as well as set a duration for a viewing party. The Viewing Party App makes it easy to stay organize whether you are hosting or attending parties.
 

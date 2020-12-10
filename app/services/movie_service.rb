@@ -1,5 +1,5 @@
 class MovieService
-  def self.find_by_title(title, page)
+  def self.search_by_title(title, page)
     response = conn.get('/3/search/movie') do |req|
       req.params[:query] = title
       req.params[:page] = page
@@ -18,7 +18,7 @@ class MovieService
 
   def self.find_details(movie_id)
     response = conn.get("/3/movie/#{movie_id}")
-    json = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.find_cast(movie_id)
@@ -29,7 +29,7 @@ class MovieService
 
   def self.find_reviews(movie_id)
     response = conn.get("/3/movie/#{movie_id}/reviews")
-    reviews = JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.conn

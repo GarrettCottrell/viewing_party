@@ -4,7 +4,7 @@ class MoviePoro
               :cast,
               :reviews_data
 
-  def initialize(search_data = nil, details_data = nil, cast = nil, reviews_data = nil)
+  def initialize(search_data, details_data = nil, cast = nil, reviews_data = nil)
     @search_data = search_data
     @details_data = details_data
     @cast = cast

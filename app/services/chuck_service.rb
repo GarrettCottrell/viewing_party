@@ -1,5 +1,4 @@
 class ChuckService
-
   def self.conn
     Faraday.new('https://api.chucknorris.io')
   end

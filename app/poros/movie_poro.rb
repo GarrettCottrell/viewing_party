@@ -38,10 +38,10 @@ class MoviePoro
   end
 
   def runtime_display
-    if @details_data[:runtime] == 0
+    if (@details_data[:runtime]).zero?
       'Runtime information unavailable.'
     else
-      "#{(@details_data[:runtime] / 60)} hr #{(@details_data[:runtime] % 60)} min"
+      "#{@details_data[:runtime] / 60} hr #{@details_data[:runtime] % 60} min"
     end
   end
 

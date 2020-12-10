@@ -1,5 +1,4 @@
 class ChuckFacade
-
   def self.get_joke
     joke = ChuckService.get_joke
 

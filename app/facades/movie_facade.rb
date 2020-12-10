@@ -9,6 +9,7 @@ class MovieFacade
       end
       # leave comment here explaining the usage of the number 20
       break if movies_data.length < 20
+
       page += 1
     end
     movies.uniq
@@ -24,6 +25,7 @@ class MovieFacade
         movies << MoviePoro.new(search_data)
       end
       break if movies_data.length < 20
+
       page += 1
     end
     movies.uniq

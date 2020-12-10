@@ -87,6 +87,24 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('User does not exist in the database')
       expect(page).to have_content('You currently have no friends')
     end
+
+    it 'new friend can not be user' do
+      visit dashboard_index_path
+      fill_in :friend_search, with: "#{@garrett.email}"
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content("New friends can't be yourself or existing friends")
+      expect(page).to have_content('You currently have no friends')
+    end
+
+    it 'new friend can not be existing friend' do
+      Friendship.create(user: @garrett, friend: @nick)
+      visit dashboard_index_path
+      fill_in :friend_search, with: "#{@nick.email}"
+      click_button 'Add Friend'
+      expect(current_path).to eq(dashboard_index_path)
+      expect(page).to have_content("New friends can't be yourself or existing friends")
+    end
   end
 
   describe 'As a guest' do

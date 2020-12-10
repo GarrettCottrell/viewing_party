@@ -8,19 +8,19 @@ describe "When I visit '/dashboard'" do
       @nick = User.create!(name: 'Nick', email: 'Nick@example.com', password: '1234', password_confirmation: '1234')
     end
 
-    it 'I should see a welcome message' do
+    it 'I should see a welcome message', :vcr do
       visit '/dashboard'
 
       expect(page).to have_content('Welcome Garrett!')
     end
 
-    it "The 'discover movies' button redirects me to '/discover'" do
+    it "discover movies button", :vcr do
       visit '/dashboard'
       click_button 'Discover Movies'
       expect(current_path).to eq('/discover')
     end
 
-    it 'Friends Section' do
+    it 'Friends Section', :vcr do
       visit '/dashboard'
 
       expect(page).to have_content('You currently have no friends')
@@ -31,8 +31,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to_not have_content('You currently have no friends')
     end
 
-    it 'I see movie title, date and time and status of invited for all of
-    the viewing parties that I am invited to' do
+    it 'I see viewing party details invited', :vcr do
       shawshank = Movie.create(name: 'Shawshank Redemption', api_id: 1337)
       viewing_party_one = Event.create!(movie_id: shawshank.id,
                                         date: '12/5/2020',
@@ -49,8 +48,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('Invited')
     end
 
-    it 'I see movie title, date and time and status of hosting for all of
-    the viewing parties that I am hosting' do
+    it 'I see viewing party details hosting', :vcr do
       shawshank = Movie.create(name: 'Shawshank Redemption', api_id: 1337)
       viewing_party_one = Event.create!(movie_id: shawshank.id,
                                         date: '12/5/2020',
@@ -67,8 +65,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('Hosting')
     end
 
-    it 'I see a search field where I can enter a users email and if they are
-    in the system, I am able to press the button to add them as a friend' do
+    it 'I can search for registered users', :vcr do
       visit dashboard_index_path
       fill_in :friend_search, with: @nick.email
       click_button 'Add Friend'
@@ -77,9 +74,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content("Email: #{@nick.email}")
     end
 
-    it 'I see a search field where I can enter a users email and if they are
-    not in the system, then I receive a notice that they were not in the system
-    and they are not added as a friend' do
+    it 'I cannot find unregistered users', :vcr do
       visit dashboard_index_path
       fill_in :friend_search, with: 'testbademail.com'
       click_button 'Add Friend'
@@ -88,7 +83,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('You currently have no friends')
     end
 
-    it 'new friend can not be user' do
+    it 'new friend can not be user', :vcr do
       visit dashboard_index_path
       fill_in :friend_search, with: "#{@garrett.email}"
       click_button 'Add Friend'
@@ -97,7 +92,7 @@ describe "When I visit '/dashboard'" do
       expect(page).to have_content('You currently have no friends')
     end
 
-    it 'new friend can not be existing friend' do
+    it 'new friend can not be existing friend', :vcr do
       Friendship.create(user: @garrett, friend: @nick)
       visit dashboard_index_path
       fill_in :friend_search, with: "#{@nick.email}"
@@ -105,10 +100,18 @@ describe "When I visit '/dashboard'" do
       expect(current_path).to eq(dashboard_index_path)
       expect(page).to have_content("New friends can't be yourself or existing friends")
     end
+
+    it 'I see a random Chuck Norris joke', :vcr do
+      visit dashboard_index_path
+      within '.chuck-norris' do
+        expect(page).to have_content('Chuck')
+      end
+    end
   end
 
+
   describe 'As a guest' do
-    it 'I see a link to register' do
+    it 'I see a link to register', :vcr do
       visit '/dashboard'
       expect(page).to have_link('Register')
     end

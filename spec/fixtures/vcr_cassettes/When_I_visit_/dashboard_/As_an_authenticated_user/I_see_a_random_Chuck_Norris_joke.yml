@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd2b9aa2c2c20e89985e7460cf0683ebf1607561294; expires=Sat, 09-Jan-21
+        00:48:14 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7ca6a0000493d9aa0d000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=2%2B3Ojlu5Q0ywuc2FnZiXJY9IigEb00pPGtP9jfn8q7ggsKiY4wYZ4lwum9iCd18B4PBH6CqjWqP%2Bd%2BcGZfDzGezzjYJpawdq8QuAecXgUyyRx10%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f58a4ba2493d-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:19.576875","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"YAH7zzUTRRuOOIvvZGXAqg","updated_at":"2020-01-05
+        13:42:19.576875","url":"https://api.chucknorris.io/jokes/YAH7zzUTRRuOOIvvZGXAqg","value":"Chuck
+        Norris doesn''t go hunting.... CHUCK NORRIS GOES KILLING."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:14 GMT
+recorded_with: VCR 6.0.0

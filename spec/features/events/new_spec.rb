@@ -15,8 +15,6 @@ describe 'events new page' do
     click_button 'Create Viewing Party for Movie'
     expect(current_path).to eq(new_event_path)
     expect(page).to have_content('Shawshank Redemption')
-    # expect(page).to have_content(142)
-    # save_and_open_page
 
     expect(page).to_not have_field('Movie Title')
     fill_in 'Duration', with: 160

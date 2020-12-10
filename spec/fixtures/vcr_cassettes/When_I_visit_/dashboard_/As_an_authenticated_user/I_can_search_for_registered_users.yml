@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7caced73731a2a80d0596134d1f6572a1607561292; expires=Sat, 09-Jan-21
+        00:48:12 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7c0e7000049514f067000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=kYCj6r7whTNumlMnhnQPQNxWhwHpo%2F6jCOrFBFDzgrsGKTLxVH6wF7UNeINZf1FAFi0z0c%2Fs7butcrkPOfRK8McUXMbmbE%2FM3A8n%2B9ICsZ4E%2BxI%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f57b0b014951-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:21.455187","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"6Z-qVFijSgi9lxcUHZ3T3Q","updated_at":"2020-01-05
+        13:42:21.455187","url":"https://api.chucknorris.io/jokes/6Z-qVFijSgi9lxcUHZ3T3Q","value":"Do
+        you know why Diablo 3 delayed over and over again? Because Diablo is too scared
+        of Chuck Norris."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:12 GMT
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc58a5d8423f50e644edc688082264c801607561292; expires=Sat, 09-Jan-21
+        00:48:12 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7c31b000049657eb5c000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=SqDCAdB1b6EQYiWA7zjIDScOi6%2BQEh1eJdsnV5wH1IBEHod4TuMRBwmXdBeP42wimk9aW%2BZB%2F3%2BcTzzG3yTItbjxLOj%2B%2BAieR%2FIJd%2BFIUH3B2xM%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f57e9c464965-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:27.496799","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"VElkbWvnTXuUMhdWVpHznw","updated_at":"2020-01-05
+        13:42:27.496799","url":"https://api.chucknorris.io/jokes/VElkbWvnTXuUMhdWVpHznw","value":"Chuck
+        Norris invented beef jerky by throwing a bull through a chain-link fence."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:13 GMT
+recorded_with: VCR 6.0.0

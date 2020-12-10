@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:27:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcf97a94c712f79bb685cf661f6e342831607574423; expires=Sat, 09-Jan-21
+        04:27:03 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec801ea20000feee2c145000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2BSqUqmkheN4sVQFhU5wTLQjBFiXKjIq%2BqQ2ncMy0IAEoBjq1LL6T0kR2CA0FWyIo28SXGoeJZhlbDT0h4JeRdPQ%2F7lbLk5sYHzBlYm0M7ijufM0%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff43610fe37feee-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":["money"],"created_at":"2020-01-05 13:42:25.628594","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"EXq1Zi3pTPeLWJvidak70w","updated_at":"2020-05-22
+        06:16:41.133769","url":"https://api.chucknorris.io/jokes/EXq1Zi3pTPeLWJvidak70w","value":"Chuck
+        Norris loans money to the World Bank."}'
+  recorded_at: Thu, 10 Dec 2020 04:27:03 GMT
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:27:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6b037b7aa55adc35ba13b35940f761181607574423; expires=Sat, 09-Jan-21
+        04:27:03 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec8021680000fece0f943000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=65%2FhSRJm3Q6yz57Gs%2Fa6tnMrfcUfSs1mie5QB3oCdXlxE%2Fb%2FocMLtGPXl3Nduq4b2y3aqEWverz7SbgmzmmW1NerlgD10U0PIVNoCM1PjR0Jl9c%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff436157e07fece-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:27.496799","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"R6h4MndXRx2tjw1nXP7sFQ","updated_at":"2020-01-05
+        13:42:27.496799","url":"https://api.chucknorris.io/jokes/R6h4MndXRx2tjw1nXP7sFQ","value":"If
+        Chuck Norris was a twilight vampire, he wouldn''t sparkle, he''d blind you
+        for life b/c nobody will ever see Chuck Norris as such a travisty"}'
+  recorded_at: Thu, 10 Dec 2020 04:27:04 GMT
+recorded_with: VCR 6.0.0

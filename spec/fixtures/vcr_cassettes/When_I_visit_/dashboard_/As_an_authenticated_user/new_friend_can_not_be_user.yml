@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:27:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d102ad8529a3baeb47457a173543646971607574421; expires=Sat, 09-Jan-21
+        04:27:01 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec8018de0000feaa53296000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=m1e8DyFvsA85i9LIqcKAehkEkYOPtk2cDnrA%2FIpmpo1%2F5y2UIEQ7HD2rcnGf7S4lxMjoQPl8a61%2FoOksS73ACoaS%2FGGw8ZT9ewG%2FfXh00HgnKw0%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff43607c957feaa-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":["explicit"],"created_at":"2020-01-05 13:42:29.855523","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"SoaKF2cySrWVTeEj4iOD5w","updated_at":"2020-01-05
+        13:42:29.855523","url":"https://api.chucknorris.io/jokes/SoaKF2cySrWVTeEj4iOD5w","value":"Chuck
+        Norris never made a Porno Movie because His Penis is registered as a deadly
+        weapon."}'
+  recorded_at: Thu, 10 Dec 2020 04:27:02 GMT
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 04:27:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d499cbc08fc155e6f7c643d6c0a7e12431607574422; expires=Sat, 09-Jan-21
+        04:27:02 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ec801bd30000feee3a365000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=c3vLvY%2BU7%2BY749kPqz8K8xfLzAWPt2XXz%2B2Ql5S7PoAiHLP6hp48ShoCnNhmWM8YiV3H6H8HhUnbnKdhZJS%2Bg72h8QbMnC1aTtAmtdczIP14uM0%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff4360c8ecffeee-IAH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.420821","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"o4gmbpgUR4SXY5JJZUTy9w","updated_at":"2020-01-05
+        13:42:28.420821","url":"https://api.chucknorris.io/jokes/o4gmbpgUR4SXY5JJZUTy9w","value":"In
+        Soviet Russia, Chuck Norris makes joke about you"}'
+  recorded_at: Thu, 10 Dec 2020 04:27:03 GMT
+recorded_with: VCR 6.0.0

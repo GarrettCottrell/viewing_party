@@ -30,7 +30,8 @@ describe 'When I visit the discover movies page' do
 
   it 'sad path unauthorized user', :vcr do
     visit '/discover'
-    expect(page).to have_content('Please Register to view this page')
+    expect(page).to have_content('Not a member?')
+    expect(page).to have_content('Already a member?')
     expect(page).to_not have_css('.title')
   end
 end

@@ -5,7 +5,7 @@ describe 'As a visitor' do
     before :each do
       @garrett = User.create!(name: 'Garrett', email: 'garrett.cottrell', password: '1234', password_confirmation: '1234')
     end
-    it 'I am able to enter my credentials and login to my account' do
+    it 'I am able to enter my credentials and login to my account', :vcr do
       visit '/'
 
       expect(page).to have_link('New to Viewing Party? Register Here')
@@ -19,7 +19,7 @@ describe 'As a visitor' do
       expect(page).to have_content('Welcome Garrett')
     end
 
-    it 'If I enter an invalid email address, I am redirected back to the welcome page with an error message' do
+    it 'If I enter an invalid email address, I am redirected back to the welcome page with an error message', :vcr do
       visit '/'
 
       fill_in :email, with: 'nick@night.com'
@@ -30,7 +30,7 @@ describe 'As a visitor' do
       expect(page).to have_content('Email and/or password is incorrect')
     end
 
-    it 'If I enter an invalid password, I am redirected back to the welcome page with an error message' do
+    it 'If I enter an invalid password, I am redirected back to the welcome page with an error message', :vcr do
       visit '/'
 
       fill_in :email, with: 'garrett.cottrell'
@@ -41,7 +41,7 @@ describe 'As a visitor' do
       expect(page).to have_content('Email and/or password is incorrect')
     end
 
-    it 'I see a link to register and when I click on that link, I am taken to the registration page' do
+    it 'I see a link to register and when I click on that link, I am taken to the registration page', :vcr do
       visit '/'
 
       click_link 'New to Viewing Party? Register Here'

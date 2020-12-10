@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:09 GMT
+      - Thu, 10 Dec 2020 04:34:45 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,28 +27,28 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dca1c6065289c05e16e6f3d69fde044791607561289; expires=Sat, 09-Jan-21
-        00:48:09 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=dd601f9083b1cf2c4b8ab5805ea74c39c1607574884; expires=Sat, 09-Jan-21
+        04:34:44 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7b5ec0000496580069000000001
+      - 06ec8728df0000feaea9970000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=5qUpJ1Ka8VkCJ7GRBJbkO88tTZsXhrwoMblbftHX%2FKcV%2BXk%2BUNALAuJ3M3YAamDCjVF9p1MKJOv%2FHPpVQY%2FeOVqZJ%2BhCM1Dhm4BC9PZKXYbWlZQ%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=gSfbhiwyzNXGR%2F1ZXh7Euc84bfTWJLiZtzfVTYm5ZkRcALYUwzPh778Wl%2FkRQ%2FR8mFX%2Bbl%2B5iIlELTlLo8BTKJFvUPgcPA2gCUndiipVCNzGT%2Fw%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f56978734965-STL
+      - 5ff441549a0afeae-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.194739","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"CqADpSgWSKCvNtefef_gLA","updated_at":"2020-01-05
-        13:42:26.194739","url":"https://api.chucknorris.io/jokes/CqADpSgWSKCvNtefef_gLA","value":"Chuck
-        Norris does not return your greeting. Chuck Norris simply stares."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:09 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:22.089095","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"_Lw7nNWwReK2TJHMF6Oupw","updated_at":"2020-01-05
+        13:42:22.089095","url":"https://api.chucknorris.io/jokes/_Lw7nNWwReK2TJHMF6Oupw","value":"\"Chuck
+        Norris doesnt have to shave, his beard shaves itself.\""}'
+  recorded_at: Thu, 10 Dec 2020 04:34:45 GMT
 recorded_with: VCR 6.0.0

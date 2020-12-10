@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 04:27:03 GMT
+      - Thu, 10 Dec 2020 04:34:52 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,30 +27,32 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dcf97a94c712f79bb685cf661f6e342831607574423; expires=Sat, 09-Jan-21
-        04:27:03 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=dec5639c7c78de9d77f6cb49d8edf82b01607574892; expires=Sat, 09-Jan-21
+        04:34:52 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ec801ea20000feee2c145000000001
+      - 06ec87470c0000b3a65ab88000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2BSqUqmkheN4sVQFhU5wTLQjBFiXKjIq%2BqQ2ncMy0IAEoBjq1LL6T0kR2CA0FWyIo28SXGoeJZhlbDT0h4JeRdPQ%2F7lbLk5sYHzBlYm0M7ijufM0%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=hacnVb%2Bw9aHfj7KH9jC7Om1ZBLSCQEaMcw5cHOTSj4W9F8N%2FjFfWThnZaTeLLoFOjLxfa%2FYeRT7jE%2FgL8ZPyChJOue2kjmuidrjeRx1XlYBHXwE%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff43610fe37feee-IAH
+      - 5ff44184dd29b3a6-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":["money"],"created_at":"2020-01-05 13:42:25.628594","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"EXq1Zi3pTPeLWJvidak70w","updated_at":"2020-05-22
-        06:16:41.133769","url":"https://api.chucknorris.io/jokes/EXq1Zi3pTPeLWJvidak70w","value":"Chuck
-        Norris loans money to the World Bank."}'
-  recorded_at: Thu, 10 Dec 2020 04:27:03 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:22.980058","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"OXofDvjgTK2YOKlo4G8MXQ","updated_at":"2020-01-05
+        13:42:22.980058","url":"https://api.chucknorris.io/jokes/OXofDvjgTK2YOKlo4G8MXQ","value":"Legend
+        has it that a weak, sickly 6 year boy named Chuck Norris was thrown into the
+        River Styx by a gang of 10 year old bullies. The bullies were never seen or
+        heard of again."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:52 GMT
 - request:
     method: get
     uri: https://api.chucknorris.io/jokes/random
@@ -70,7 +72,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 04:27:04 GMT
+      - Thu, 10 Dec 2020 04:34:53 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -78,29 +80,30 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d6b037b7aa55adc35ba13b35940f761181607574423; expires=Sat, 09-Jan-21
-        04:27:03 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=db8e254bc75790c19b129442d527c9a491607574893; expires=Sat, 09-Jan-21
+        04:34:53 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ec8021680000fece0f943000000001
+      - 06ec8749d50000b3d63dbdc000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=65%2FhSRJm3Q6yz57Gs%2Fa6tnMrfcUfSs1mie5QB3oCdXlxE%2Fb%2FocMLtGPXl3Nduq4b2y3aqEWverz7SbgmzmmW1NerlgD10U0PIVNoCM1PjR0Jl9c%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LbpbbuzxXFztkwd6746hKB%2BVHQFAv0SM1Wc0ran7ABSy4YH1fdHY6j9SK26BQz9in6uDFbkUWbIc1caCP%2BBp0GlKk1jn%2BKOZnEE1boyJC9tz3iE%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff436157e07fece-IAH
+      - 5ff441895bdbb3d6-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:27.496799","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"R6h4MndXRx2tjw1nXP7sFQ","updated_at":"2020-01-05
-        13:42:27.496799","url":"https://api.chucknorris.io/jokes/R6h4MndXRx2tjw1nXP7sFQ","value":"If
-        Chuck Norris was a twilight vampire, he wouldn''t sparkle, he''d blind you
-        for life b/c nobody will ever see Chuck Norris as such a travisty"}'
-  recorded_at: Thu, 10 Dec 2020 04:27:04 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:25.099703","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"wHzUsBIATmePkjf_SYIpuw","updated_at":"2020-01-05
+        13:42:25.099703","url":"https://api.chucknorris.io/jokes/wHzUsBIATmePkjf_SYIpuw","value":"When
+        Chuck Norris was in middle school, his English teacher assigned an essay:
+        \"What is courage?\" Chuck received an A+ for turning in a blank page with
+        only his name at the top."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:53 GMT
 recorded_with: VCR 6.0.0

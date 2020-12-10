@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:11 GMT
+      - Thu, 10 Dec 2020 04:34:48 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,28 +27,29 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d18fcce3ca1590862f55da612ebbb57421607561291; expires=Sat, 09-Jan-21
-        00:48:11 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=dad940060bcc5d272cd2f1a90a501e9d51607574888; expires=Sat, 09-Jan-21
+        04:34:48 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7bff100004945243bb000000001
+      - 06ec8737f20000b3c4d7a08000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=M%2BW78sZEJk%2BRD5%2BgSrXy4M8CTdd9whXNlTPkTqbwTguKOOLNRMS2P8gmkh6AOgiGbTBwYLBNy2ylkkiSYhOixGe%2FF63n8hrj16EfBEabHdFi49k%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4jBqiEa9It4SfrCS1ZXrEX096HkrR%2B62YjxcvkYzrfNGlgmK8KZTUol5FBvUrUAw%2FzAyn9LAgeBdx1AxbZ0Hw4f9W0%2FlcTPbhVEv2s%2FMrHwShg0%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f57988894945-STL
+      - 5ff4416cbca8b3c4-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.143137","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"3JVs09L-SSK-Rr63ivg_Qg","updated_at":"2020-01-05
-        13:42:28.143137","url":"https://api.chucknorris.io/jokes/3JVs09L-SSK-Rr63ivg_Qg","value":"The
-        only question: Does Chuck Norris have to choke a bitch?"}'
-  recorded_at: Thu, 10 Dec 2020 00:48:11 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.664997","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"10mnaFmrSgWqQdmeQCCaaA","updated_at":"2020-01-05
+        13:42:28.664997","url":"https://api.chucknorris.io/jokes/10mnaFmrSgWqQdmeQCCaaA","value":"If
+        Chuck Norris ever allowed a sports team to be named after him, that team would
+        never lose again...except when Chuck Norris played against it."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:48 GMT
 recorded_with: VCR 6.0.0

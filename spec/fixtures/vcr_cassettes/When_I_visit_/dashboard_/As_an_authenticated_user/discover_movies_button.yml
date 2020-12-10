@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:10 GMT
+      - Thu, 10 Dec 2020 04:34:46 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,28 +27,29 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da1603a5ad6c2faa92a89ba0e1f97370f1607561289; expires=Sat, 09-Jan-21
-        00:48:09 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=db352beac7d654de5a9ca974e54a2322a1607574885; expires=Sat, 09-Jan-21
+        04:34:45 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7b7ea00004941fc2b7000000001
+      - 06ec872cd00000fec612af6000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=tZ2dtgVLGzcm3bycEP0sRB6Vw8O7cukTX3o%2BSOpzB0ccotWuDj%2F8EyLRycEicOGT420i0PvhIr2PM16u4toA6Lvbae1%2B4qT8AqFIPXqHBUGI4Ms%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qjTJcZl0jEiP5eD0HtfjHj0QIwgFNJofhOTrbWxfis3TZTaKGEiPJQsoyD5Tdz0n9l3ZotTi9YiYZ3bPu9hRr2hpZUGME5wuwEfh7aSDUFck9LY%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f56cace64941-STL
+      - 5ff4415ae97afec6-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:25.099703","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"RLhi-gKHTFGZSzoTCCPhUg","updated_at":"2020-01-05
-        13:42:25.099703","url":"https://api.chucknorris.io/jokes/RLhi-gKHTFGZSzoTCCPhUg","value":"Chuck
-        Norris can cut Granite, with a butter knife."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:10 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.991637","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"09xc0ElfQQ29ZGDN6CPSNQ","updated_at":"2020-01-05
+        13:42:26.991637","url":"https://api.chucknorris.io/jokes/09xc0ElfQQ29ZGDN6CPSNQ","value":"Chuck
+        Norris endorsed Ted Cruz for President, thus singlehandedly ending the need
+        to hold elections forever..."}'
+  recorded_at: Thu, 10 Dec 2020 04:34:46 GMT
 recorded_with: VCR 6.0.0

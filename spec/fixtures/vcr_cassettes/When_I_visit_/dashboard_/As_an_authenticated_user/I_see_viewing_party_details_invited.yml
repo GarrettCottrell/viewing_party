@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 10 Dec 2020 00:48:11 GMT
+      - Thu, 10 Dec 2020 04:34:48 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -27,30 +27,30 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=ddfbabb3736a8bcd5367f9deab61f4ceb1607561291; expires=Sat, 09-Jan-21
-        00:48:11 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      - __cfduid=db4030b889db3367be87072f9468a92631607574887; expires=Sat, 09-Jan-21
+        04:34:47 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Request-Id:
-      - 06ebb7bedf000049594127b000000001
+      - 06ec8735310000feb66e149000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=nlrTnNYc5kzpe1xjevS7G3%2FgoE8Gw4e0ftUkLBKvwYAWIaw5QB7Negt4BJNM13G0YuNb8reoJFMXCZGY0KPVssGQoDcV6CSivM1R5pl65BRHKg8%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ZfwgkwcXS96wvdOm3gV0fDF8xWx5LwzJVEc2veq6%2BXy6SqndRXoqDBV%2BVU9q7UKboJyfGvM7diI3ZFudCQEYHyyCEBAONyn%2BhvpiMrCYVahCLUo%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 5ff2f577c9c94959-STL
+      - 5ff441684815feb6-IAH
     body:
       encoding: ASCII-8BIT
-      string: '{"categories":[],"created_at":"2020-01-05 13:42:21.455187","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"_FNvVwQEQ1GMEBbRS1oOQg","updated_at":"2020-01-05
-        13:42:21.455187","url":"https://api.chucknorris.io/jokes/_FNvVwQEQ1GMEBbRS1oOQg","value":"When
-        Chuck Norris drives through a ghetto neighbourhood, he can make his Chevrolet
-        truck appear much more \"hip\" than usual by pressing the \"Swag\" button
-        on the dashboard."}'
-  recorded_at: Thu, 10 Dec 2020 00:48:11 GMT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:30.177068","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"7X_phynxR9ml4DtGf_is1Q","updated_at":"2020-01-05
+        13:42:30.177068","url":"https://api.chucknorris.io/jokes/7X_phynxR9ml4DtGf_is1Q","value":"(aka
+        dont dis chuck ) It has to be Chuck Norris Chuck norris oops you almost made
+        a fatal error Chuck norris cant catch em all Chuck norris didnt forget the
+        quiche and he didnt pay for it either Chuck norris doesnt go to morrisons"}'
+  recorded_at: Thu, 10 Dec 2020 04:34:48 GMT
 recorded_with: VCR 6.0.0

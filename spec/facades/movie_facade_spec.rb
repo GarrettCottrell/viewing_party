@@ -10,7 +10,7 @@ describe 'movie facade' do
   end
 
   it 'find top rated poros', :vcr do
-    movies = MovieFacade.top_40
+    movies = MovieFacade.top_forty
 
     expect(movies).to be_an(Array)
     expect(movies.length).to eq(40)

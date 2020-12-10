@@ -17,4 +17,20 @@ class User < ApplicationRecord
   def self.find_friend(friend_email)
     where(email: friend_email)[0]
   end
+
+  def self.user_exists?(user_email)
+    where(email: user_email) != []
+  end
+
+  def valid_friendship?(friend)
+    unique_users?(friend) && new_friendship?(friend)
+  end
+
+  def unique_users?(friend)
+    self != friend
+  end
+
+  def new_friendship?(friend)
+    friends.where(name: friend.name) == []
+  end
 end

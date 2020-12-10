@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddfbabb3736a8bcd5367f9deab61f4ceb1607561291; expires=Sat, 09-Jan-21
+        00:48:11 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7bedf000049594127b000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=nlrTnNYc5kzpe1xjevS7G3%2FgoE8Gw4e0ftUkLBKvwYAWIaw5QB7Negt4BJNM13G0YuNb8reoJFMXCZGY0KPVssGQoDcV6CSivM1R5pl65BRHKg8%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f577c9c94959-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:21.455187","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"_FNvVwQEQ1GMEBbRS1oOQg","updated_at":"2020-01-05
+        13:42:21.455187","url":"https://api.chucknorris.io/jokes/_FNvVwQEQ1GMEBbRS1oOQg","value":"When
+        Chuck Norris drives through a ghetto neighbourhood, he can make his Chevrolet
+        truck appear much more \"hip\" than usual by pressing the \"Swag\" button
+        on the dashboard."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:11 GMT
+recorded_with: VCR 6.0.0

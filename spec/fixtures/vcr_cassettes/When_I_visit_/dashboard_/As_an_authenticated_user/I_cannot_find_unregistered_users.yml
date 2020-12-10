@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d914f7f8faa77d5eceb38f68a2619b9501607561293; expires=Sat, 09-Jan-21
+        00:48:13 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7c59a00004955b1a00000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9k6EVj9dVmFagQSmGZgOyOscJh%2FeW0ZKqLDeHR0RPNDVojaR%2BhZxfEC9z18Yd7iRTO3n9CyH0NglZppTcarRCAyfXGi%2FzoZvV%2FdP0CygMcxZuXs%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f58289ac4955-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:26.194739","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"SQM3bvqRTX-Z1vBbC6T3WQ","updated_at":"2020-01-05
+        13:42:26.194739","url":"https://api.chucknorris.io/jokes/SQM3bvqRTX-Z1vBbC6T3WQ","value":"Chuck
+        Norris'' toupee came off an orangutan''s ass."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:13 GMT
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d29ac445778135b2b42994a4d221d2f9a1607561293; expires=Sat, 09-Jan-21
+        00:48:13 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7c7e20000495d1a1c7000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=TzS5Jh1oslHblGIAsxgmxJOPDpsBFMXYnheLSSXAXw3PXzZVpn23JuUpJs%2Ber8vkKv5isj2%2BzdOLNdmuZpnHOuOPrhcuy7JrgFKxm1sPAwZyFXw%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f5863d35495d-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:22.980058","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"V01WBdsgSDKXox9ch45CzA","updated_at":"2020-01-05
+        13:42:22.980058","url":"https://api.chucknorris.io/jokes/V01WBdsgSDKXox9ch45CzA","value":"Chuck
+        Norris can hear silence"}'
+  recorded_at: Thu, 10 Dec 2020 00:48:14 GMT
+recorded_with: VCR 6.0.0

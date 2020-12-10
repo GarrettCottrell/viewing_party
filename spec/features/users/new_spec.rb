@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'As a visitor' do
   describe 'When I visit the registration page' do
-    it 'I am able to enter my credentials and create an account' do
+    it 'I am able to enter my credentials and create an account', :vcr do
       visit '/registration'
 
       fill_in :name, with: 'Testname'
@@ -15,7 +15,7 @@ describe 'As a visitor' do
       expect(page).to have_content('Testname')
     end
 
-    it 'If I do not completely fill in the form, I am redirected back to users new with a flash message' do
+    it 'If I do not completely fill in the form, I am redirected back to users new with a flash message', :vcr do
       visit '/registration'
 
       fill_in :name, with: 'Testname'
@@ -28,7 +28,7 @@ describe 'As a visitor' do
     end
 
     it 'I see a link to log-in and when I click that link I am redirected to
-    the welcome page' do
+    the welcome page', :vcr do
       visit '/registration'
 
       click_link 'Already Registered? Log in Here'

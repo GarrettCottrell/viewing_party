@@ -1,6 +1,10 @@
 <% if current_user %>
   <h1>Welcome <%= current_user.name %>!</h1>
 
+  <section class="chuck-norris">
+    <p><%= @chuck.joke %></p>
+  </section>
+
   <%= button_to 'Discover Movies', '/discover', method: :get %>
 
   <h3>Friends:</h3>

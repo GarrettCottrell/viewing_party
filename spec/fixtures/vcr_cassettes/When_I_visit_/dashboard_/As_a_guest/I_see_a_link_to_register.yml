@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chucknorris.io/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 10 Dec 2020 00:48:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4ff6e8f68e1dd1bb4f38bafa498626e31607561295; expires=Sat, 09-Jan-21
+        00:48:15 GMT; path=/; domain=.chucknorris.io; HttpOnly; SameSite=Lax
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06ebb7cc9b0000494d313b0000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=13SQ1Nn7v4YyF0UrSDoVBvMTA6UA5XFOz7LPq98pOh4R46C6SfC32nOdRkWrr00rwQ7k47Isd%2ByptPrvUwAltCmYfxmlFz2cigMO4W486xAB3hg%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5ff2f58dc9ab494d-STL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[],"created_at":"2020-01-05 13:42:28.984661","icon_url":"https://assets.chucknorris.host/img/avatar/chuck-norris.png","id":"s_akNmy_Rn2Q_mBZllZS6Q","updated_at":"2020-01-05
+        13:42:28.984661","url":"https://api.chucknorris.io/jokes/s_akNmy_Rn2Q_mBZllZS6Q","value":"Chuck
+        Norris was the Fourth Wiseman. He gave Baby Jesus the gift of Beard. Jesus
+        loved it so much the other Wisemen were jealous of his obvious gift favoritism.
+        They then used their combined influence to have Chuck Norris omitted from
+        the Bible. All three later died mysteriously from roundhouse-kick related
+        issues."}'
+  recorded_at: Thu, 10 Dec 2020 00:48:15 GMT
+recorded_with: VCR 6.0.0

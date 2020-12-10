@@ -1,3 +1,5 @@
 class DashboardController < ApplicationController
-  def index; end
+  def index
+    @chuck = ChuckFacade.get_joke
+  end
 end

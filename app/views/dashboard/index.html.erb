@@ -32,5 +32,6 @@
     <% end %>
   <% end %>
 <% else %>
-  <h4> Please <%= link_to 'Register', '/registration', method: :get %> to view this page </h4>
+  <h4> Not a member? <%= link_to 'Register', '/registration', method: :get %> to view this page </h4>
+  <h4> Already a member? <%= link_to 'Log In', '/', method: :get %> to view this page </h4>
 <% end %>

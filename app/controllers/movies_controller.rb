@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
       title = params[:Search_By_Movie_Title]
       @movies = MovieFacade.search(title)
     else
-      @movies = MovieFacade.top_40
+      @movies = MovieFacade.top_forty
     end
   end
 
